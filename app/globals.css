@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F2F3F9;
+  --card: #ffffff;
+  --done-card: #EAEBF0;
+  --purple: #7B6BE0;
+  --purple-light: rgba(123,107,224,0.10);
+  --text-primary: #1A1D2E;
+  --text-secondary: #6B6F85;
+  --text-muted: #B0B8CC;
+  --done-chk: #C0BCCF;
+  --hi: #E8706A;
+  --md: #F5C842;
+  --lo: #72C48A;
+  --border: #E8EAF0;
+  --border-light: #F0F2F8;
+}
+
+* { -webkit-tap-highlight-color: transparent; }
+body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text-primary); overscroll-behavior: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.slide-up { animation: slideUp 0.22s ease; }
